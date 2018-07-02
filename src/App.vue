@@ -1,12 +1,9 @@
 <template>
   <div id="app">
     <input
-      v-rocket-mask
+      v-rocket-mask="maskOptions"
       type="text"
       v-model="inputValue"
-      mask="1111 1111 1111 1111"
-      with-placeholder="_"
-      hide-on-blur="true"
       name="creditCard"
       placeholder="XXXX XXXX XXXX XXXX"
     />
@@ -20,7 +17,14 @@ export default {
   name: 'app',
   data () {
     return {
-      inputValue: ''
+      inputValue: '',
+      maskOptions: {
+        mask: '1111 1111 1111 1111',
+        placeholder: '_',
+        showOnFocus: true,
+        hideOnBlur: true,
+        showAlways: true
+      }
     }
   }
 }
