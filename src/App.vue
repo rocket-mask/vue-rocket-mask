@@ -1,6 +1,15 @@
 <template>
   <div id="app">
-    component will be here
+    <input
+      v-rocket-mask
+      type="text"
+      v-model="inputValue"
+      mask="1111 1111 1111 1111"
+      with-placeholder="_"
+      hide-on-blur="true"
+      name="creditCard"
+      placeholder="XXXX XXXX XXXX XXXX"
+    />
   </div>
 </template>
 
@@ -8,7 +17,12 @@
 
 
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    return {
+      inputValue: ''
+    }
+  }
 }
 </script>
 
