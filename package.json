@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "nebo15-mask": "^0.1.17",
     "vue": "^2.5.16"
   },
   "devDependencies": {
